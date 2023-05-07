@@ -1,4 +1,6 @@
 import React from 'react';
+import customButton from './custom-button.module.scss'
+
 
 const CustomButton = ({buttonProperties}) => {
 
@@ -8,6 +10,7 @@ const CustomButton = ({buttonProperties}) => {
         type="button"
         value={buttonProperties.name}
         onClick={buttonProperties.onClick}
+        className={customButton.customButton}
       />     
     </div>
   );
